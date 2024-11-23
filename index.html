@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Arrenda Aqui</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">arrenda<span>aqui</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-3-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#package">Destaque</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="login.html" class="btn">Login | Registo</a>
+      </div>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__content">
+        <h1><span>Encontre</span> O Lar Dos Seus Sonhos</h1>
+        <p class="section__description">
+          Descubra casas incríveis para alugar com o Arrenda Aqui! Encontre o lugar perfeito para você e sua família, com facilidade e confiança.
+        </p>
+        <form action="/listaImoveis.html">
+          <div class="input__group">
+            <label for="location">Localização</label>
+            <input type="text" name="location" placeholder="Luanda, Talatona" />
+          </div>
+          <div class="input__group">
+            <label for="date">Data</label>
+            <input type="text" name="date" placeholder="26 Nov, Dom" />
+          </div>
+          <div class="input__group">
+            <label for="price">Preço</label>
+            <input type="text" name="price" placeholder="AKZ 150,000" />
+          </div>
+          <button class="btn"><i class="ri-search-line"></i></button>
+        </form>
+      </div>
+      
+      <div class="header__image">
+        <img src="assets/img_2.jpg" alt="header" style="object-fit: cover;"/>
+        <img src="assets/img_3.jpg" alt="header" />
+        <img src="assets/img_1.jpg" alt="header" />
+        <!-- <img src="assets/bg.png" alt="bg" /> -->
+      </div>
+    </header>
+
+    <section class="section__container choose__container" id="about">
+      <div class="choose__image">
+        <img src="assets/img_3.jpg" alt="choose" />
+      </div>
+      <div class="choose__content">
+        <p class="section__subheader">Por que nos escolher?</p>
+        <h2 class="section__header">Encontre o imóvel <span>perfeito</span></h2>
+        <ul class="choose__list">
+          <li>
+            <span><i class="ri-verified-badge-fill"></i></span>
+            <div>
+              <h4>Melhores Preços Garantidos</h4>
+              <p>
+                Oferecemos imóveis com valores competitivos no mercado, garantindo o melhor custo-benefício para sua compra ou aluguel.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-calendar-fill"></i></span>
+            <div>
+              <h4>Opções Flexíveis</h4>
+              <p>
+                Escolha entre uma ampla variedade de casas e apartamentos com condições personalizadas de pagamento e contratos.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span><i class="ri-road-map-fill"></i></span>
+            <div>
+              <h4>Localizações Estratégicas</h4>
+              <p>
+                Nossos imóveis estão situados nas melhores regiões, com infraestrutura completa e proximidade de comércios e serviços.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="section__container popular__container" id="package">
+      <!--    <img src="assets/bg.png" alt="bg" class="popular__bg" /> -->
+      <p class="section__subheader">Propriedades Disponíveis</p>
+      <h2 class="section__header">Nossas Propriedades <span>Populares</span></h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+               <div class="popular__card">
+                  <img src="assets/img_4.jpg" alt="property" />
+                  <div class="popular__content">
+                     <div class="popular__rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.0(34) 😊
+                     </div>
+                     <h4>Vila Alice - Casa T3</h4>
+                     <p><span>AOA 35,000,000</span> Venda</p>
+                     <div class="popular__card__footer">
+                        
+                        <div>
+                           <span><i class="ri-map-pin-2-fill"></i></span> Luanda, Angola
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+               <div class="popular__card">
+                  <img src="assets/img_5.jpg" alt="property" />
+                  <div class="popular__content">
+                     <div class="popular__rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        4.5(55) 😘
+                     </div>
+                     <h4>Ingombota - Casa T3 de Luxo</h4>
+                     <p><span>AOA 12,000,000</span> Venda</p>
+                     <div class="popular__card__footer">
+                        
+                        <div>
+                           <span><i class="ri-map-pin-2-fill"></i></span> Luanda,
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="popular__card">
+                 <img src="assets/img_5.jpg" alt="property" />
+                 <div class="popular__content">
+                    <div class="popular__rating">
+                       <span><i class="ri-star-fill"></i></span>
+                       4.5(55) 😘
+                    </div>
+                    <h4>Ingombota - Casa T3 de Luxo</h4>
+                    <p><span>AOA 12,000,000</span> Venda</p>
+                    <div class="popular__card__footer">
+                       
+                       <div>
+                          <span><i class="ri-map-pin-2-fill"></i></span> Luanda,
+                       </div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+            <!-- Adicionar outros imóveis conforme necessário -->
+         </div>
+      </div>
+   </section>
+   
+   
+   <section class="section__container explore__container">
+    <div class="explore__image">
+      <img src="assets/img_1.jpg" alt="Família em casa" />
+    </div>
+    <div class="explore__content">
+      <p class="section__subheader">Encontre o Lar Perfeito</p>
+      <h2 class="section__header">
+        Casas Feitas Para <span>Você e Sua Família</span>
+      </h2>
+      <p class="section__description">
+        Descubra uma seleção exclusiva de casas e apartamentos ideais para famílias. Com espaço, conforto e localização segura, nossos imóveis são pensados para atender às necessidades do seu lar. Encontre o lugar perfeito para criar memórias inesquecíveis com quem você ama.
+      </p>
+      <div class="explore__btn">
+        <button class="btn">Ver Ofertas</button>
+      </div>
+      <div class="explore__grid">
+        <div>
+          <h4>50+</h4>
+          <p>Casas<br />Espaçosas</p>
+        </div>
+        <div>
+          <h4>120+</h4>
+          <p>Localizações<br />Seguras</p>
+        </div>
+        <div>
+          <h4>300+</h4>
+          <p>Famílias<br />Satisfeitas</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="section__container client__container">
+    <!--     <img src="assets/bg.png" alt="bg" class="client__bg" /> -->
+        <p class="section__subheader">O Que Nossos Clientes Dizem</p>
+        <h2 class="section__header">Depoimentos de <span>Clientes</span></h2>
+        <div class="client__card active">
+          <img src="assets/clientes_1.jpg" alt="client" />
+          <div class="client__content">
+            <h4>Juliana Ferreira</h4>
+            <h5>Designer de Interiores</h5>
+            <p>
+              Essa plataforma transformou meu sonho de morar em um lugar perfeito em realidade! O processo de locação foi simples, e a equipe me ajudou com cada detalhe. Agora tenho o lar ideal para chamar de meu. Super recomendo!
+            </p>
+          </div>
+        </div>
+        <div class="client__card">
+          <img src="assets/clientes.jpg" alt="client" />
+          
+          <div class="client__content">
+            <h4>Leonardo Almeida</h4>
+            <h5>Desenvolvedor de Software</h5>
+            <p>
+              Procurar e alugar um imóvel nunca foi tão fácil! A plataforma me ofereceu opções incríveis e o suporte foi excepcional. Encontrei um lugar incrível que atende todas as minhas necessidades. Adorei a experiência!
+            </p>
+          </div>
+        </div>
+        <div class="client__card">
+          <img src="assets/clintes.jpg" alt="client" />
+          <div class="client__content">
+            <h4>Ana Costa</h4>
+            <h5>Fotógrafa</h5>
+            <p>
+              Como fotógrafa, eu precisava de um lugar bem iluminado e inspirador. Essa plataforma me ajudou a encontrar um imóvel que superou todas as minhas expectativas. Agora posso trabalhar e relaxar em um ambiente que realmente amo!
+            </p>
+          </div>
+        </div>
+        <div class="client__btns">
+          <button class="btn" id="prev">
+            <i class="ri-arrow-left-line"></i>
+          </button>
+          <button class="btn" id="next">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </section>
+  
+
+      <section class="section__container subscribe__container" id="contact">
+        <h2 class="section__header">
+          Inscreva-se Para Receber As Últimas Novidades <span>Da Arrenda Aqui</span>
+        </h2>
+        <p class="section__description">
+          Fique por dentro das melhores oportunidades de aluguel, novidades sobre nossos imóveis e ofertas exclusivas. Inscreva-se agora e não perca nenhuma atualização sobre nossos serviços!
+        </p>
+        <form action="/">
+          <input type="text" placeholder="Seu Email" />
+          <button class="btn">Inscrever-se</button>
+        </form>
+  </section>
+  
+
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#">Arrenda Aqui</a>
+        </div>
+        <p>
+          Encontre o lar dos seus sonhos com a gente! Conecte-se através das nossas redes sociais, acesse links rápidos para recursos essenciais e conte com suporte 24/7 para facilitar seu processo de aluguel.
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-instagram-line"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Serviços</h4>
+        <ul class="footer__links">
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Imóveis Disponíveis</a></li>
+          <li><a href="#">Nossos Serviços</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Instagram</h4>
+        <div class="footer__col__flex">
+          <img src="assets/clientes_1.jpg" alt="instagram" />
+          <img src="assets/img_1.jpg" alt="instagram" />
+          <img src="assets/img_2.jpg" alt="instagram" />
+          <img src="assets/img_5.jpg" alt="instagram" />
+          <img src="assets/clinte_casados.jpg" alt="instagram" />
+          <img src="assets/clientes_1.jpg" alt="instagram" />
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <ul class="footer__links">
+          <li>
+            <a href="#">
+              <span><i class="ri-phone-fill"></i></span> +244 987654321
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-map-pin-fill"></i></span> Luanda, Angola
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span><i class="ri-mail-fill"></i></span> info@arrendaqui.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Arrenda Aqui. Todos os direitos reservados.
+    </div>
+  </footer>
+  
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
